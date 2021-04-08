@@ -4,7 +4,16 @@ namespace dankiCode\controllers;
   {
     public function index()
     {
-        echo "estou na home!";
+        if(isset($_SESSION['login']))
+        {
+        //Renderisa a home do usuario  
+          \dankiCode\views\MainView::render("home");
+        }
+        else 
+        {
+          //Redenrisa pra criar uma conta.
+           \dankiCode\views\MainView::render("registrar");
+        }
     }
   }
 
