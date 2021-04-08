@@ -12,7 +12,7 @@ namespace dankiCode\controllers;
         else 
         {
           //Redenrisa pra criar uma conta.
-           \dankiCode\views\MainView::render("registrar");
+           \dankiCode\views\MainView::render("login");
         }
     }
   }
