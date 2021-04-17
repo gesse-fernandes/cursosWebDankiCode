@@ -31,10 +31,10 @@
             <h3 style="text-align: center;">Crie sua conta!</h3>
             <form method="post">
                 <input type="text" name="nome" placeholder="Seu nome...">
-                <input type="text" name="email" placeholder="Login...">
+                <input type="text" name="email" placeholder="Email...">
                 <input type="password" name="senha" placeholder="Senha...">
                 <input type="submit" name="acao" value="Logar!">
-                <input type="hidden" name="login">
+                <input type="hidden" name="registrar" value="registrar">
             </form>
             <p><a href="<?php echo INCLUDE_PATH ?>registrar">Criar Conta</a></p>
         </div>
