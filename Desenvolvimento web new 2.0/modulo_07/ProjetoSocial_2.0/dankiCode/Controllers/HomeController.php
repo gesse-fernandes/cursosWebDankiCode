@@ -29,12 +29,12 @@ namespace dankiCode\controllers;
               if(\dankiCode\Bcrypt::check($senha,$senhaBanco)){
                 //user logado com sucesso
                 $_SESSION['login'] = $dados['email'];
-            \dankiCode\Utilidades::alerta("Logado com sucesso");
-            \dankiCode\Utilidades::alerta(INCLUDE_PATH);
+              \dankiCode\Utilidades::alerta("Logado com sucesso");
+              \dankiCode\Utilidades::alerta(INCLUDE_PATH);
               }
               else{
-            \dankiCode\Utilidades::alerta("senha incorreta");
-            \dankiCode\Utilidades::alerta(INCLUDE_PATH);
+                \dankiCode\Utilidades::alerta("senha incorreta");
+               \dankiCode\Utilidades::alerta(INCLUDE_PATH);
               }
             }
           }
