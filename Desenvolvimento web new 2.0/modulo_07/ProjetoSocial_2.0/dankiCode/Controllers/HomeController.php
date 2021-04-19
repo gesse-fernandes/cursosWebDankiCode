@@ -45,6 +45,7 @@
 						if(\dankiCode\Bcrypt::check($senha,$senhaBanco)){
 							//Usuário logado com sucesso
 							$_SESSION['login'] = $dados['email'];
+							$_SESSION['id'] = $dados['id'];
 							$_SESSION['nome'] = explode(' ',$dados['nome'])[0];
 							\dankiCode\Utilidades::alerta('Logado com sucesso!');
 							\dankiCode\Utilidades::redirect(INCLUDE_PATH);

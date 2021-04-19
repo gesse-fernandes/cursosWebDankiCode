@@ -8,4 +8,13 @@ use rede_social_curso_devweb2;
 
 );*/
 
-SELECT  * FROM  usuarios;
+
+/*SELECT  * FROM  usuarios;*/
+
+CREATE  TABLE amizades(
+ id int(11) not null PRIMARY  key auto_increment,
+ enviou int(11) not null,
+ recebeu int(11) not null,
+ status int(11)
+
+);

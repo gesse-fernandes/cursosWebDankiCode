@@ -17,5 +17,7 @@ class Mysql{
                 }
                 return self::$pdo; 
         }
+        return self::$pdo;
+        
         }
 }
